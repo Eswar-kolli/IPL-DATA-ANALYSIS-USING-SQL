@@ -128,15 +128,15 @@ This is the first stage of the project. Before performing analysis, I used SQL t
 
 ### What this file covers
 
-**Record count validation**
+- **Record count validation**
 
 Checks the total number of records in both the `matches` and `deliveries` tables.
 
-**Duplicate checking**
+- **Duplicate checking**
 
 Checks for duplicate match IDs in the `matches` table.
 
-**Missing value analysis**
+- **Missing value analysis**
 
 Checks important columns in the `matches` table for NULL values, including:
 
@@ -149,7 +149,7 @@ Checks important columns in the `matches` table for NULL values, including:
 * Player of the Match
 * Venue
 
-**Season standardization**
+- #### **Season standardization**
 
 Different season formats are converted into a consistent year format.
 
@@ -161,7 +161,7 @@ For example:
 2020/21 → 2020
 ```
 
-**Team name standardization**
+- **Team name standardization**
 
 Historical team names are standardized so that the same team is not treated as different teams during analysis.
 
@@ -174,7 +174,7 @@ Royal Challengers Bangalore → Royal Challengers Bengaluru
 Rising Pune Supergiant → Rising Pune Supergiants
 ```
 
-**Venue standardization**
+- **Venue standardization**
 
 Different variations of venue names are consolidated into standardized venue names.
 
@@ -190,27 +190,27 @@ This file focuses on team scoring performance and venue characteristics.
 
 ### Analysis included
 
-**Highest team totals**
+- **Highest team totals**
 
 Finds the highest innings totals in the dataset.
 
-**Highest score by each team**
+- **Highest score by each team**
 
 Finds the highest innings total achieved by each batting team.
 
-**Average first-innings score by venue**
+- **Average first-innings score by venue**
 
 Calculates the average first-innings score for each venue.
 
-**Season-wise venue analysis**
+- **Season-wise venue analysis**
 
 Compares average first-innings scores by venue across different seasons.
 
-**Most frequently used venues**
+- **Most frequently used venues**
 
 Identifies venues that have hosted the highest number of matches.
 
-**Most successful team at each venue**
+- **Most successful team at each venue**
 
 Uses the `RANK()` window function to identify the team with the most wins at each venue.
 
@@ -226,23 +226,23 @@ This file looks at the relationship between winning the toss and winning the mat
 
 ### Analysis included
 
-**Overall toss impact**
+- **Overall toss impact**
 
 Calculates how often the team that won the toss also won the match.
 
-**Season-wise toss impact**
+- **Season-wise toss impact**
 
 Breaks down toss and match results by season.
 
-**Toss decision preference**
+- **Toss decision preference**
 
 Shows how often teams chose to bat or field after winning the toss.
 
-**Season-wise toss preference**
+- **Season-wise toss preference**
 
 Shows how toss decisions changed across seasons.
 
-**Toss decision and match outcome**
+- **Toss decision and match outcome**
 
 Compares match-winning results based on whether the toss-winning team chose to bat or field.
 
@@ -260,7 +260,7 @@ This file focuses on individual player performance.
 
 ### Analysis included
 
-**Top 10 run scorers**
+- **Top 10 run scorers**
 
 Finds the players with the highest total runs.
 
@@ -269,15 +269,15 @@ The file also demonstrates two approaches:
 * `TOP`
 * `OFFSET` and `FETCH`
 
-**Top 10 wicket takers**
+- **Top 10 wicket takers**
 
 Finds the bowlers with the highest number of wickets using relevant dismissal types.
 
-**Highest individual score in a match**
+- **Highest individual score in a match**
 
 Calculates each batter's runs in each match and identifies the highest individual score.
 
-**Most Player of the Match awards**
+- **Most Player of the Match awards**
 
 Finds the player who has received the highest number of Player of the Match awards.
 
@@ -291,33 +291,33 @@ This file moves from basic analysis into more business-oriented questions.
 
 ### Analysis included
 
-**Matches played per season**
+- **Matches played per season**
 
 Shows how many matches were played in each IPL season.
 
-**Incomplete/no-result matches**
+- **Incomplete/no-result matches**
 
 Identifies the individual matches that ended without a result.
 
 There are only a small number of such matches in the dataset, so the query shows the actual matches rather than only providing a season-level count.
 
-**Most successful teams**
+- **Most successful teams**
 
 Ranks teams based on the number of matches they have won.
 
-**First-batting vs second-batting performance**
+- **First-batting vs second-batting performance**
 
 Calculates the winning percentage for teams batting first and teams batting second.
 
-**Season-wise top scorer**
+- **Season-wise top scorer**
 
 Uses a CTE and `RANK()` to identify the highest run scorer in each season.
 
-**Season-wise top wicket taker**
+- **Season-wise top wicket taker**
 
 Uses a CTE and `RANK()` to identify the highest wicket taker in each season.
 
-**Team winning percentage**
+- **Team winning percentage**
 
 Calculates matches played, wins and winning percentage for each team.
 
@@ -326,7 +326,7 @@ Two SQL approaches are demonstrated using:
 * A derived table
 * A CTE
 
-**Team consistency analysis**
+- **Team consistency analysis**
 
 Looks at teams across seasons and calculates:
 
