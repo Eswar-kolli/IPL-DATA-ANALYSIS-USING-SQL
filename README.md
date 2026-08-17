@@ -68,7 +68,55 @@ Contains ball-by-ball information such as:
 
 #### [Kaggle – IPL Complete Dataset](https://www.kaggle.com/datasets/patrickb1912/ipl-complete-dataset-20082020)
 
+---
+## 🔍 Project Workflow
 
+```text
+IPL Dataset
+     │
+     ▼
+Data Validation
+     │
+     ▼
+Data Cleaning & Standardization
+     │
+     ▼
+Team & Venue Analysis
+     │
+     ▼
+Toss Impact Analysis
+     │
+     ▼
+Player Performance Analysis
+     │
+     ▼
+Advanced Business Analysis
+     │
+     ▼
+Views & Season Summary Table
+```
+
+## 🛠️ Tools Used
+
+* **Microsoft SQL Server**
+* **SQL Server Management Studio (SSMS)**
+* **SQL**
+* **Git**
+* **GitHub**
+
+---
+
+## 🎯 What This Project Demonstrates
+
+This project demonstrates how I approach a data analysis problem from raw data to structured insights:
+
+**Validate → Clean → Analyze → Summarize**
+
+It gave me practical experience working with relational data, writing analytical SQL queries, using CTEs and window functions, and converting business questions into SQL solutions.
+
+The project is also structured so that the analysis can be extended later into a **Power BI dashboard** using the views and season summary table.
+
+---
 
 ## 📂 Project Files
 
@@ -390,54 +438,6 @@ Throughout the project, I used and practiced:
 
 ---
 
-## 🔍 Project Workflow
-
-```text
-IPL Dataset
-     │
-     ▼
-Data Validation
-     │
-     ▼
-Data Cleaning & Standardization
-     │
-     ▼
-Team & Venue Analysis
-     │
-     ▼
-Toss Impact Analysis
-     │
-     ▼
-Player Performance Analysis
-     │
-     ▼
-Advanced Business Analysis
-     │
-     ▼
-Views & Season Summary Table
-```
-
-## 🛠️ Tools Used
-
-* **Microsoft SQL Server**
-* **SQL Server Management Studio (SSMS)**
-* **SQL**
-* **Git**
-* **GitHub**
-
----
-
-## 🎯 What This Project Demonstrates
-
-This project demonstrates how I approach a data analysis problem from raw data to structured insights:
-
-**Validate → Clean → Analyze → Summarize**
-
-It gave me practical experience working with relational data, writing analytical SQL queries, using CTEs and window functions, and converting business questions into SQL solutions.
-
-The project is also structured so that the analysis can be extended later into a **Power BI dashboard** using the views and season summary table.
-
----
 
 ## 👨‍💻 Author
 
